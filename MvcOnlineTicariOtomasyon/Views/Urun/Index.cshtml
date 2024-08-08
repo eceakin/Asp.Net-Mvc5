@@ -1,0 +1,44 @@
+﻿@using MvcOnlineTicariOtomasyon.Models.Siniflar;
+@model List<Urun>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+<br />
+
+<table class="table table-ordered">
+    <tr>
+        <th>ID</th>
+        <th>Ürün</th>
+        <th>Marka</th>
+        <th>Stok</th>
+        <th>Alış Fiyat</th>
+        <th>Satış Fiyat</th>
+        <th>Kategori</th>
+        <th>Görsel</th>
+        <th>SİL</th>
+        <th>GÜNCELLE</th>
+
+    </tr>
+    @foreach(var urun in Model)
+            {
+                <tr>
+                    <td>@urun.UrunID</td>
+                    <td>@urun.UrunAd</td>
+                    <td>@urun.Marka</td>
+                    <td>@urun.Stok</td>
+                    <td>@urun.AlisFiyat</td>
+                    <td>@urun.SatisFiyat</td>
+                    <td>@urun.Kategori.KategoriAd</td>
+                    <td>@urun.UrunGorsel</td>
+                    <td>
+                        <a href="/Urun/UrunSil/@urun.UrunID" class="btn btn-danger">Sil</a>
+                    </td>
+                    <td>
+                        <a href="/Urun/UrunGetir/@urun.UrunID" class="btn btn-success">Güncelle</a>
+                    </td>
+                </tr>
+            }
+</table>
+<a href="/Urun/YeniUrun/" class="btn btn-info"> Yeni Ürün</a>    
+
