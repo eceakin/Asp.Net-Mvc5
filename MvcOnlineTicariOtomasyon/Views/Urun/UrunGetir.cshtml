@@ -8,7 +8,10 @@
 <br />
 
 @using (Html.BeginForm("UrunGuncelle", "Urun", FormMethod.Post))
+
+
 {
+    @Html.HiddenFor(x=>x.UrunID)
     @Html.LabelFor(x => x.UrunAd)
     @Html.TextBoxFor(x => x.UrunAd, new { @class = "form-control" })
     <br />
@@ -26,7 +29,8 @@
     <br />
 
     @Html.LabelFor(x => x.Kategori)
-    @*Html.TextBoxFor(x => x.KategoriId, new { @class = "form-control" })*@
+   @Html.DropDownListFor(x=>x.KategoriId , (List<SelectListItem>)
+    ViewBag.deger1 , new {@class  ="form-control"})
 
     <br />
     @Html.LabelFor(x => x.UrunGorsel)
