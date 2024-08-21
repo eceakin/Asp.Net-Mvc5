@@ -5,9 +5,9 @@ using System.Web;
 
 namespace MvcOnlineTicariOtomasyon.Models.Siniflar
 {
-    public class SinifGrup2
+    public class SinifGrup3
     {
-        public string Departman { get; set; }
-        public int Sayi { get; set; }
+        public int Sayi  { get; set; }
+        public string Marka { get; set; }
     }
 }
