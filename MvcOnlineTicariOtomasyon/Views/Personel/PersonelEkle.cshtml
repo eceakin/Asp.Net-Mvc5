@@ -19,7 +19,9 @@
 
     @Html.LabelFor(x => x.Departman)
     @*Html.TextBoxFor(x => x.KategoriId, new { @class = "form-control" })*@
-    @Html.DropDownListFor(x => x.DepartmanID, (List<SelectListItem>)ViewBag.deger1, new { @class = "form-control" })
+    @Html.DropDownListFor(x => x.DepartmanID, 
+    (List<SelectListItem>)ViewBag.deger,
+    new { @class = "form-control" })
     <br />
     <button class="btn btn-primary">Kaydet</button>
 </form>

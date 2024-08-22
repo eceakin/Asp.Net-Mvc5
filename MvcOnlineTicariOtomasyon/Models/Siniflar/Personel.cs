@@ -11,15 +11,25 @@ namespace MvcOnlineTicariOtomasyon.Models.Siniflar
     {
         [Key]
         public int PersonelID { get; set; }
+
+
+        [Display(Name ="Personel Adı")]
         [Column(TypeName = "Varchar")]
         [StringLength(30)]
         public string PersonelAd { get; set; }
+
+        [Display(Name = "Personel Soyadı")]
         [Column(TypeName = "Varchar")]
         [StringLength(30)]
         public string PersonelSoyad { get; set; }
+
+
+        [Display(Name = "Personel Görseli")]
         [Column(TypeName = "Varchar")]
         [StringLength(250)]
         public string PersonelGorsel { get; set; }
+
+
         public ICollection<SatisHareket> SatisHarekets { get; set; }
         public int DepartmanID {  get; set; }
         public virtual Departman Departman { get; set; }
