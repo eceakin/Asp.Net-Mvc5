@@ -134,6 +134,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\IstatistikController.cs" />
     <Compile Include="Controllers\KategoriController.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\PersonelController.cs" />
     <Compile Include="Controllers\SatisController.cs" />
     <Compile Include="Controllers\UrunController.cs" />
@@ -4754,6 +4755,15 @@
     <Content Include="AdminLTE-3.0.4\plugins\sweetalert2-theme-bootstrap-4\bootstrap-4.scss" />
     <Content Include="AdminLTE-3.0.4\plugins\toastr\toastr.js.map" />
     <Content Include="AdminLTE-3.0.4\README.md" />
+    <Content Include="weblogintema\weblogin\css\font-awesome.css" />
+    <Content Include="weblogintema\weblogin\css\popup-box.css" />
+    <Content Include="weblogintema\weblogin\css\style.css" />
+    <Content Include="weblogintema\weblogin\fonts\fontawesome-webfont.svg" />
+    <Content Include="weblogintema\weblogin\images\bg.jpg" />
+    <Content Include="weblogintema\weblogin\index.html" />
+    <Content Include="weblogintema\weblogin\js\jquery-2.1.4.min.js" />
+    <Content Include="weblogintema\weblogin\js\jquery.magnific-popup.js" />
+    <Content Include="weblogintema\weblogin\w3layouts-License.txt" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -4921,6 +4931,12 @@
     <Content Include="Views\Istatistik\Partial4.cshtml" />
     <Content Include="Views\Personel\PersonelListe.cshtml" />
     <Content Include="Views\Yapilacak\Index.cshtml" />
+    <Content Include="Views\Login\Index.cshtml" />
+    <Content Include="weblogintema\weblogin\fonts\fontawesome-webfont.eot" />
+    <Content Include="weblogintema\weblogin\fonts\fontawesome-webfont.ttf" />
+    <Content Include="weblogintema\weblogin\fonts\fontawesome-webfont.woff" />
+    <Content Include="weblogintema\weblogin\fonts\fontawesome-webfont.woff2" />
+    <Content Include="weblogintema\weblogin\fonts\FontAwesome.otf" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
